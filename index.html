@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Two Note</title>
+		<script src="https://js.live.net/v5.0/wl.js"></script>	
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<div id="signin"></div>
+		<div id="loader"></div>
+		<div id="app">
+			<nav class="navbar navbar-default navbar-static-top" id="nav">
+				<div class="container">
+				
+					<div class="navbar-header">
+
+						<!-- Collapsed Hamburger -->
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+							<span class="sr-only">Toggle Navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+							<ul class="nav navbar-nav">
+								<li><h4 id="noteHeading">Select a note</h4></li>
+							</ul>
+					</div>
+				
+					<div class="collapse navbar-collapse" id="app-navbar-collapse">					
+						<ul class="nav navbar-nav navbar-right">
+							<li><button type="button" class="btn btn-default" id="add" ><span class="glyphicon glyphicon-plus"></span></button></li>
+							<li><button type="button" class="btn btn-default" id="save" ><span class="glyphicon glyphicon-floppy-disk"></span></button></li>
+							<li><button type="button" class="btn btn-default" id="edit" ><span class="glyphicon glyphicon-pencil"></span></button></li>
+							<li>|</li>
+							<li><button type="button" class="btn btn-default" id="delete" ><span class="glyphicon glyphicon-trash"></span></button></li>
+
+							<li class="dropdown">
+								<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<span class="glyphicon glyphicon-menu-down"></span>
+								</button>
+
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+									<li><a id="about" href="#">About</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			
+			<div class="row" id="app_body">
+			  <div id="notesList" class="col-xs-4 table-bordered">
+				<input type="text" class="form-control input-lg" id="search-note" placeholder="Search through Notes">
+				<ul id="list"></ul>
+			  </div>
+			  <div class="col-xs-8 table-bordered" id="noteBody">
+				<textarea name="note_body" id="note_body"></textarea>
+			  </div>
+			</div>
+		</div>
+        <label id="info"></label>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+<html>
